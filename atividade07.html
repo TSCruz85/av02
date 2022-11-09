@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 - O preço de um produto ao consumidor é a soma do preço de custo mais as porcentagens de impostos e a do
+        distribuidor. Leia o nome do produto, seu custo de fábrica e as taxas de impostos e do distribuidor. Imprima o
+        nome do produto e o preço final ao consumidor.</title>
+</head>
+
+<body>
+    <script>
+        let nomeProd = prompt("Digite o nome de um produto: ");
+        let custoFabr = prompt("Digite o custo de fabrica: ");
+        let taxaImpGov = prompt("Digite o valor da porcentagem da taxa de impostos do governo: ");
+        let taxaImpFab = prompt("Digite o valor da porcentagem da taxa de impostos do fabricante: ");
+
+        totalImp = ((Number(taxaImpGov) / 100) + (Number(taxaImpFab) / 100));
+        precoImp = Number(custoFabr) * totalImp;
+        precoFinal = precoImp + Number(custoFabr);
+
+        window.document.write("Nome produto: " + nomeProd + "</br>");
+        window.document.write("Preço final para o consumidor: " + precoFinal);
+
+
+
+    </script>
+</body>
+
+</html>

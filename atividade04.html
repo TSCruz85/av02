@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 4. Leia os dados de umaconta-corrente: o nome do correntista, o nome do banco, o número da conta, o valor
+        total de cheques a debitar, o total de dinheiro e cheques a creditar, o limite de crédito e o saldo atual.
+        Imprima o nome do correntista, o nome do banco, o número da conta e o saldo disponível (saldo disponível =
+        (saldo atual + valor do crédito + limite) -valor do débito).</title>
+</head>
+
+<body>
+    <script>
+        let nome_cliente = prompt("Digite o nome do cliente:");
+        let banco = prompt("Digite o banco:");
+        let conta = prompt("Digite a conta:");
+        let chequedeb = prompt("Digite cheques a debitar:");
+        let dinheirocred = prompt("Digite valor em dinheiro(especial) a creditar:");
+        let limitecred = prompt("Digite o limite de crédito:");
+        let saldoatual = prompt("Digite o saldo atual:");
+
+        saldoDispinivel = ((Number(saldoatual) + Number(dinheirocred) + Number(limitecred) + Number(dinheirocred)) - Number(chequedeb));
+
+
+        window.document.write("Cliente: " + nome_cliente + "</br>");
+        window.document.write("Banco: " + banco + "</br>");
+        window.document.write("Conta: " + conta + "</br>");
+        window.document.write("Saldo disponível: " + saldoDisponivel + "</br>");
+
+
+
+
+    </script>
+
+</body>
+
+</html>

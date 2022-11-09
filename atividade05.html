@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 - Leia o nome de um cliente de fast food e a quantidade de cada item do menu que ele vai pedir. Imprima o
+        nome do cliente e o total da compra. Menu
+        Hot dog R$ 1,00 Hambúrguer R$ 1,30 Cheeseburguer R$ 1,50 Refrigerante em lata R$ 1,00 Batatas fritas R$ 0,80.
+    </title>
+</head>
+
+<body>
+    <script>
+
+
+        let nome_cliente = prompt('Digite o nome do cliente:');
+        let qt_hotDog = prompt('Quantos Hot dogs?');
+        let qt_hamburguer = prompt('Quantos hambugers?');
+        let qt_cheeseBurguer = prompt('Quantos cheeseburguers?');
+        let qt_refrigerante = prompt('Quantos refrigerantes?');
+        let qt_batata = prompt('Quantas batatas?');
+
+        valor_hotDog = 1.00;
+        valor_hamburguer = 1.30;
+        valor_cheeseBurguer = 1.50;
+        valor_refrigerante = 1.00;
+        valor_batata = 0.80;
+
+
+        valorHotDog = Number(qt_hotDog) * Number(valor_hotDog);
+        valorHamburguer = Number(qt_hamburguer) * Number(valor_hamburguer);
+        valorCheeseBurguer = Number(qt_cheeseBurguer) * Number(valor_cheeseBurguer);
+        valorRefrigerante = Number(qt_refrigerante) * Number(valor_refrigerante);
+        valorBatataFrita = Number(qt_batata) * Number(valor_batata);
+        totalPedido = valorHotDog + valorHamburguer + valorCheeseBurguer + valorRefrigerante + valorBatataFrita;
+
+        window.document.write("Nome: " + nome_cliente + "</br>");
+        window.document.write("Total da compra: " + totalPedido);
+    </script>
+
+</body>
+
+</html>

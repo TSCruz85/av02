@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1. Leia o nome e as três notas do aluno, o nome da disciplina e o número da turma. Imprima os dados lidos e a
+        média aritmética das notas (soma das notas dividida por três).</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        let nome = prompt("Digite o nome do aluno:");
+        let nomedisciplina = prompt("Digite disciplina:");
+        let num_turma = prompt("Digite a turma:");
+        let nota1 = prompt("Digite a 1º nota do aluno:");
+        let nota2 = prompt("Digite a 2º nota do aluno:");
+        let nota3 = prompt("Digite a 3º nota do aluno:");
+        
+
+
+        media = ((Number(nota1) + Number(nota2) + Number(nota3))/3);
+
+        window.document.write( nome + " da Turma " + num_turma + ", sua média em " + nomedisciplina + " é: " + media);
+
+
+    </script>
+
+</body>
+
+</html>
